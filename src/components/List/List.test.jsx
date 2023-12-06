@@ -15,3 +15,14 @@ it("dizideki her bir eleman için bir satır eklenir",()=> {
     //3.) satırların sayısı kullanıcıların sayısına eşit mi kontrol eder
     expect(rows).toHaveLength(users.length)
 })
+
+it('herbir kullanıcı için email/isim/yas değerleri hücre içerisinde ekrana yazılır',()=> {
+    
+    render(<List users={users}/>)
+
+    for(const user of users) {
+        screen.getByRole('cell', {name: user.name});
+        screen.getByRole('cell', {name: user.email});
+        screen.getByRole('cell', {name: user.age});
+    }
+})
