@@ -2,7 +2,7 @@ import React from 'react'
 
 const List = ({users}) => {
   return (
-  <table className='table table-dark table-hover'>
+  <table className='table  table-hover'>
     <thead>
       <tr>
         <th>İsim</th>

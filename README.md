@@ -16,3 +16,5 @@ testleri yazmak yük gibi gelmez
 2. Behavior Driven Development 
 
 - önce özellik kodlarınr daha sonra bu özellik için gerekli test yazılır
+
+![](./public/ekran.png)
